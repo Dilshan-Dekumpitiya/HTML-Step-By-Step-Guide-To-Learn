@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image and Multimedia</title>
+</head>
+<body>
+
+<!--///////////////////// adding images /////////////////////-->
+<img
+        src="./assets/images/large.jpg"
+        alt="iphone 14 image"
+        title="iphone 14"
+        width="500"
+        height="350"
+>
+
+<!--///////////////////// adding responsive images /////////////////////-->
+<!-- Using img tag-->
+<img
+        srcset="./assets/images/small.jpg 480w, ./assets/images/medium.jpg 800w"
+        sizes="(max-width: 1000px) 800px, (max-width: 500px) 480x"
+        src="./assets/images/large.jpg"
+        alt="iphone 14 image"
+        title="iphone 14"
+>
+
+<!-- Using picture tag-->
+<picture>
+    <source media="(min-width: 1000px)" srcset="../assets/images/large.jpg"> <!-- width>1000px -->
+    <source media="(min-width: 800px)" srcset="../assets/images/medium2.jpg"> <!-- 800px < width <1000px -->
+    <img src="../assets/images/small2.jpg" title="iphone 14" alt="iphone"> <!-- width < 800px -->
+</picture>
+
+<!--///////////////////// adding videos /////////////////////-->
+<!-- With normal attribute-->
+<video src="../assets/videos/car.mp4" controls>
+    <p>
+        Plz watch this video
+    </p>
+</video>
+
+<!-- with all atributes-->
+<video
+        autoplay
+        muted
+        loop
+        controls
+        poster="../assets/images/car-post.png"
+        width="700px"
+        height="400px"
+        preload="none"
+>
+    <source src="../assets/videos/car.mp4" type="video/mp4">
+    <source src="../assets/videos/car.webm2" type="video/webm">
+    <track label="English" kind="subtitles" src="../assets/videos/subtitles/sample.vtt" srclang="en">
+    <track label="Arabic" kind="subtitles" src="../assets/videos/subtitles/arabic.vtt" srclang="ar" default>
+    <p>
+        Plz watch this video
+    </p>
+</video>
+
+<!--///////////////////// adding audios /////////////////////-->
+
+<audio controls>
+    <source src="../assets/audios/audio_file2.mp3" type="audio/mp3">
+</audio>
+
+
+
+</body>
+</html>
