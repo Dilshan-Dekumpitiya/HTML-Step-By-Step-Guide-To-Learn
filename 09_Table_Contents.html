@@ -2,9 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Table Content</title>
 </head>
 <body>
+<h2>Basic Table Structure</h2>
+
+<caption>Basic Table Structure</caption>
+<table border="1">
+
+    <thead>
+    <th id="id">ID</th>
+    <th id="fname">fname</th>
+    <th id="lanme">Lname</th>
+    <th id="address">Address</th>
+    </thead>
+
+    <tbody>
+
+    <tr>
+        <td headers="id">1</td>
+        <td headers="fname">Kavindu</td>
+        <td headers="lname">Samarasinghe</td>
+        <td headers="address">Panadura</td>
+    </tr>
+
+    <tr>
+        <td headers="id">2</td>
+        <td headers="fname">Janith</td>
+        <td headers="lname">Silva</td>
+        <td headers="address">Colombo</td>
+    </tr>
+
+    <tr>
+        <td headers="id">3</td>
+        <td headers="fname">Amila</td>
+        <td headers="lname">Mendis</td>
+        <td headers="address">Kurunagala</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<br>
+<hr>
+
+<h2>thead and th use as one side Table Structure</h2>
+
+<caption>thead and th use as one side Table Structure</caption>
+<table border="1">
+    <thead>
+    <th id="subject">Subject</th>
+    <th id="min">Min</th>
+    <th id="max">Max</th>
+    </thead>
+    <tbody>
+    <tr>
+        <th id="english">English</th>
+        <td headers="min english">Kaveen</td>
+        <td headers="max english">Tharindu</td>
+    </tr>
+    <tr>
+        <th id="math">Math</th>
+        <td headers="min math">Janith</td>
+        <td headers="max math">Maneesh</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<hr>
+
+<h2>Colspan</h2>
+
+<caption>Colspan</caption>
+<table border="1">
+    <thead>
+    <th colspan="2">Name</th>
+    <th>Marks</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Dilshan</td>
+        <td>Dekumpitiya</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td>Janith</td>
+        <td>Silva</td>
+        <td>75</td>
+    </tr>
+    <tr>
+        <td colspan="2">Kalum</td>
+        <td>65</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<hr>
+
+<h2>Rowspan</h2>
+
+<caption>Rowspan</caption>
+<table border="1">
+    <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Contact</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Vishwa</td>
+        <td>0762222222</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Nirasha</td>
+        <td rowspan="2">0763333333</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Himasha</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Onali</td>
+        <td>0764444444</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<hr>
+
+<h2>Full table Using Colspan and Rowspan</h2>
+<caption>Full table using colspan and rowspan</caption>
+<table border="1">
+    <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th colspan="2">Emails</th>
+    <th>Parent's Name</th>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>1</td>
+        <td>Dilshan</td>
+        <td>Dilshan1@gmail.com</td>
+        <td>Dilshan2@gmail.com</td>
+        <td>Mr.Dekumpitiya</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Janith</td>
+        <td>Janith1@gmail.com</td>
+        <td>Janith2@gmail.com</td>
+        <td>Mr.Sarath</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Sheron</td>
+        <td colspan="2">sheron@gmail.com</td>
+        <td rowspan="2">Mr. Kamal</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Brian</td>
+        <td>brian1@gmail.com</td>
+        <td>brian2@gmail.com</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>Vishwa</td>
+        <td>vishwa1@gmail.com</td>
+        <td>vishwa2@gmail.com</td>
+        <td>Mr.Nihal</td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>Saroja</td>
+        <td colspan="2" rowspan="2">saroja@gmail.com</td>
+        <td rowspan="2">Mr.Nelson</td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>Sarojini</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<br>
+<hr>
 
 </body>
 </html>
