@@ -53,7 +53,7 @@
 >
     <source src="../assets/videos/car.mp4" type="video/mp4">
     <source src="../assets/videos/car.webm2" type="video/webm">
-    <track label="English" kind="subtitles" src="../assets/videos/subtitles/sample.vtt" srclang="en">
+    <track label="English" kind="subtitles" src="./assets/videos/subtitles/english.vtt" srclang="en">
     <track label="Arabic" kind="subtitles" src="../assets/videos/subtitles/arabic.vtt" srclang="ar" default>
     <p>
         Plz watch this video
@@ -66,7 +66,20 @@
     <source src="../assets/audios/audio_file2.mp3" type="audio/mp3">
 </audio>
 
-
+<!--///////////////////// hotspot region (Use map and area element ) /////////////////////-->
+<img
+        src="./assets/images/large.jpg"
+        alt="iphone 14 image"
+        title="iphone 14"
+        width="300"
+        height="150"
+        border="1"
+        usemap="#iphone"
+>
+<map name="iphone">
+    <area shape="rect" coords="250,80,100,50" href="https://www.dictionary.com/browse/man" alt="This is iphone" target="_blank">
+    <area shape="circle" coords="0,0,30" href="https://www.google.com/" alt="google here" target="_blank">
+</map>
 
 </body>
 </html>
