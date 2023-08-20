@@ -6,5 +6,273 @@
 </head>
 <body>
 
+<!--///////////////// 1) form element ///////////////////-->
+<form action="">
+
+</form>
+
+<!--///////////////// 2) input element ///////////////////-->
+<form action="">
+
+    <!--input: button-->
+    <input type="button" value="Click!">
+
+    <!--input: submit-->
+    <input type="submit" value="Submit">
+
+    <!--input: reset (Reset the form)-->
+    <input type="reset" value="Reset">
+
+    <br>
+    <br>
+
+    <!--input: checkbox-->
+    <input type="checkbox">
+    <input type="checkbox" checked>
+
+    <br>
+    <br>
+
+    <!--input: radio-->
+    <input type="radio">
+    <input type="radio" checked>
+
+    <br>
+    <br>
+
+    <!--input: color-->
+    <input type="color">
+    <input type="color" value="#11a61f"> <!-- hex color code -->
+
+    <br>
+    <br>
+
+    <!--input: datepicker-->
+    <input type="date">
+    <input type="date" value="2023-07-22">
+    <input type="date" value="2023-07-22" min="2023-07-10" max="2023-07-25">
+
+    <br>
+    <br>
+
+    <!--input: timepicker-->
+    <input type="time">
+    <input type="time" value="18:00">
+    <input type="time" min="18:00" max="21:00">
+
+    <br>
+    <br>
+
+    <!--input: datetimepicker-->
+    <input type="datetime-local">
+    <input type="datetime-local" value="2023-07-22T19:30"> <!-- T means time -->
+    <input type="datetime-local" min="2023-07-10T00:00" max="2023-07-25T13:30">
+
+    <br>
+    <br>
+
+    <!--input: weekpicker-->
+    <input type="week">
+    <input type="week" value="2023-W04">
+
+    <br>
+    <br>
+
+    <!--input: monthpicker-->
+    <input type="month">
+    <input type="month" value="2018-02">
+
+    <br>
+    <br>
+
+    <!--input: rangepicker-->
+    <input type="range" value="50" disabled>
+
+    <br>
+    <br>
+
+    <!--input: text-->
+    <input type="text">
+    <input type="text" value="html">
+    <input type="text" placeholder="Enter your name here...">
+
+    <br>
+    <br>
+
+    <!--input: email-->
+    <input type="email">
+    <input type="email" value="info@ijse.lk">
+    <input type="email" placeholder="example@company.com">
+
+    <br>
+    <br>
+
+    <!--input: tel-->
+    <input type="tel">
+    <input type="tel" value="+94761111111">
+    <input type="tel" placeholder="+9476XXXXXXX">
+    <input type="tel" placeholder="+9476XXXXXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+    <br>
+    <br>
+
+    <!--input: password-->
+    <input type="password" placeholder="Enter your password here...">
+
+    <br>
+    <br>
+
+    <!--input: number-->
+    <input type="number">
+    <input type="number" value="hello12321">
+    <input type="number" value="12321">
+    <input type="number" value="12.31">
+
+    <br>
+    <br>
+
+    <!--input: url-->
+    <input type="url">
+    <input type="url" value="https://ijse.lk">
+    <input type="url" placeholder="Enter url">
+
+    <br>
+    <br>
+
+    <!--input: search-->
+    <input type="search" placeholder="Search here...">
+
+    <br>
+    <br>
+
+    <!--input: file uploader-->
+    <input type="file">
+
+    <br>
+    <br>
+
+    <!--input: image-->
+    <img src="../assets/images/small.jpg" alt="">
+    <input type="image" src="../assets/images/small2.jpg">
+
+    <br>
+    <br>
+
+    <!--input: hidden-->
+    <input type="hidden" value="hello">
+
+</form>
+
+<hr>
+
+<br>
+<br>
+
+
+<form action="">
+
+    <!--///////////////// 3) label element ///////////////////-->
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" placeholder="Enter your first name...">
+
+    <br>
+    <br>
+
+    <!--///////////////// 4) select element ///////////////////-->
+    <label for="tech">Choose your technology</label><br>
+    <select id="tech" >
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="perl">Perl</option>
+        <option value="go">Go-Lang</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!--///////////////// 5) textarea element ///////////////////-->
+    <label for="address">Address</label><br>
+    <textarea id="address" cols="50" rows="10"></textarea>
+
+    <br>
+    <br>
+
+    <!--///////////////// 6) button element ///////////////////-->
+    <input type="button" value="Click!">
+    <input type="submit" value="Submit">
+    <input type="Reset" value="Reset">
+
+    <br>
+    <br>
+    <br>
+
+    <button type="button">Click!!</button>
+    <button type="submit">Submit!!</button>
+    <button type="reset">Reset!!</button>
+
+    <br>
+    <br>
+
+    <!--///////////////// 7) fieldset & legend elements ///////////////////-->
+    <fieldset>
+
+        <legend>Choose your technologies</legend>
+
+        <input type="radio" id="java">
+        <label for="java">Java</label>
+
+        <input type="radio" id="python">
+        <label for="python">Python</label>
+
+        <input type="radio" id="go">
+        <label for="go">Go-Lang</label>
+    </fieldset>
+
+    <br>
+    <br>
+
+    <!--///////////////// 8) datalist element ///////////////////-->
+    <label for="country-input">Country</label> <br>
+    <input type="text" id="country-input" list="country">
+
+    <datalist id="country">
+        <option value="srilanka">Sri Lanka</option>
+        <option value="japan">Japan</option>
+        <option value="india">India</option>
+        <option value="china">china</option>
+        <option value="siriya">Siriya</option>
+    </datalist>
+
+    <br>
+    <br>
+
+</form>
+
+<!--///////////////// 9) output element ///////////////////-->
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" name="a" value="10"> +
+    <input type="number" id="b" name="b" value="20"> =
+    <output name="result">30</output>
+</form>
+
+<!--///////////////// 10) option and optgroup element ///////////////////-->
+<form>
+
+    <label for="tech2">Technology</label><br>
+    <select id="tech2">
+        <optgroup label="Programming Languages">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="perl">Perl</option>
+            <option value="go">Go-Lang</option>
+        </optgroup>
+        <optgroup label="DevOps">
+            <option value="aws">AWS</option>
+            <option value="azure">Azure</option>
+        </optgroup>
+    </select>
+
+</form>
+
 </body>
 </html>
